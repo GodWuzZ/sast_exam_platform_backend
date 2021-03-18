@@ -3,8 +3,7 @@ GodWuzZ
 bffw（hb）  
 Acow  
 punkginger 
-ChenXinyang621 
-punkginger   
+ChenXinyang621    
 the_Matrix  
 guiyanxi  
 tanjirou06  
