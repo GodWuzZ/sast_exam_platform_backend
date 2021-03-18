@@ -62,5 +62,13 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        'contest.admin' => \App\Http\Middleware\Contest\IsAdmin::class,
+        'contest.running' => \App\Http\Middleware\Contest\IsRunning::class,
+        'after.updateProblemsMD5' => \App\Http\Middleware\After\UpdateProblemsMD5::class,
+        'after.updateNoticesMD5' => \App\Http\Middleware\After\UpdateNoticesMD5::class,
+        'examiners'  => \App\Http\Middleware\Mark\Examiners::class,
+        'problem.exist' => \App\Http\Middleware\Problem\Exist::class,
+        'answer.exist' => \App\Http\Middleware\Answer\Exist::class,
+        'work.feng' => \App\Http\Middleware\Work\work::class
     ];
 }
