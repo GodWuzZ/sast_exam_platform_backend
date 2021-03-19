@@ -27,4 +27,5 @@ class work
         }
         return $next($request);
     }
+
 }

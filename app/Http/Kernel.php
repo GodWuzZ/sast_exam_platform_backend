@@ -21,6 +21,7 @@ class Kernel extends HttpKernel
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+
     ];
 
     /**
@@ -69,6 +70,7 @@ class Kernel extends HttpKernel
         'examiners'  => \App\Http\Middleware\Mark\Examiners::class,
         'problem.exist' => \App\Http\Middleware\Problem\Exist::class,
         'answer.exist' => \App\Http\Middleware\Answer\Exist::class,
-        'work.feng' => \App\Http\Middleware\Work\work::class
+        'work.feng' => \App\Http\Middleware\Work\work::class,
+        'Emmm' => \App\Http\Middleware\Work\Emmm::class
     ];
 }
