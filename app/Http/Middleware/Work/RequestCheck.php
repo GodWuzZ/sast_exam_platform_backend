@@ -3,7 +3,6 @@
 namespace App\Http\Middleware\Work;
 
 use Closure;
-use Firebase\JWT\JWT;
 use Illuminate\Http\Request;
 
 class RequestCheck

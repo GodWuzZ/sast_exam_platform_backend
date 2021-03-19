@@ -8,16 +8,12 @@ use Illuminate\Http\Request;
 
 class WorkController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('RequestCheck');
-    } 
+   
     public function GodWu(){
         return "GodWu";
     }
 
     public function RequestCheck(Request $request){
-        
-        return $request->user();
+        $this->middleware('RequestCheck');
     }
 }
