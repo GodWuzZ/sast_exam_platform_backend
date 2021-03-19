@@ -10,4 +10,8 @@ class WorkController extends Controller
     public function GodWu(){
         return "GodWu";
     }
+
+    public function Acow337(){
+        return "Acow337";
+    }
 }

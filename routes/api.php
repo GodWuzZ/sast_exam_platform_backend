@@ -19,4 +19,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::middleware('work.feng')->any('/work',[WorkController::class,'GodWu']);
+//Route::middleware('work.feng')->any('/work',[WorkController::class,'GodWu']);
+
+Route::middleware('work')->any('/work',[WorkController::class,'Acow337']);
+
+
