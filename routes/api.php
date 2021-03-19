@@ -20,3 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::middleware('work.feng')->any('/work',[WorkController::class,'GodWu']);
+
+Route::middleware('RequestCheck')->post('/check',[WorkController::class,'RequestCheck']);
