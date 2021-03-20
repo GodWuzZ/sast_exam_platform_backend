@@ -69,6 +69,7 @@ class Kernel extends HttpKernel
         'examiners'  => \App\Http\Middleware\Mark\Examiners::class,
         'problem.exist' => \App\Http\Middleware\Problem\Exist::class,
         'answer.exist' => \App\Http\Middleware\Answer\Exist::class,
-        'work.feng' => \App\Http\Middleware\Work\work::class
+        'work.feng' => \App\Http\Middleware\Work\work::class,
+        'check.cxy' => \App\Http\Middleware\Work\check::class
     ];
 }

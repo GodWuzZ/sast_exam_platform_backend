@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Work\WorkController;
+use App\Http\Middleware\Work\check;
+use App\Http\Middleware\Work\work;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +22,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::middleware('work.feng')->any('/work',[WorkController::class,'GodWu']);
+
+Route::middleware('check.cxy')
+->any('/user/{username?}/{password?}', [WorkController::class,'check'])
+->where(['password' => '[0-9]+', 'username' => '[a-z]+']);
