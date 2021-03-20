@@ -10,4 +10,7 @@ class WorkController extends Controller
     public function GodWu(){
         return "GodWu";
     }
+    public function test(){
+        return "ok";
+    }
 }
